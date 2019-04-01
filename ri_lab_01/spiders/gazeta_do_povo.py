@@ -4,6 +4,7 @@ import json
 
 from ri_lab_01.items import RiLab01Item
 from ri_lab_01.items import RiLab01CommentItem
+from datetime import date
 
 
 class GazetaDoPovoSpider(scrapy.Spider):
@@ -17,17 +18,31 @@ class GazetaDoPovoSpider(scrapy.Spider):
     #            data = json.load(json_file)
     #    self.start_urls = list(data.values())
 
+
+
     def parse(self, response):
         item = RiLab01Item()
-        item['_id'] = '1'
-        item['title'] = response.css('.c-titulo::text').get()
-        item['sub_title'] = response.css('.c-sobretitulo span::text').get()
-        item['author'] = response.css('.c-autor span::text').get()
-        item['date'] = response.css('.data-publicacao time::text').get()
-        item['section'] = response.xpath('/html/body/div[2]/section[2]/section[1]/ol/li[2]/a/span/text()').extract_first()
-        item['text'] = response.css('.c-sumario::text').get()
-        item['url'] = response.url
+        pub_date_value = response.css('.data-publicacao time::text').get()
+        if self.is_valid_date(pub_date_value):
+            item['_id'] = '1'
+            item['title'] = response.css('.c-titulo::text').get()
+            item['sub_title'] = response.css('.c-sobretitulo span::text').get()
+            item['author'] = response.css('.c-autor span::text').get()
+            item['date'] = pub_date_value
+            item['section'] = response.xpath('/html/body/div[2]/section[2]/section[1]/ol/li[2]/a/span/text()').extract_first()
+            item['text'] = response.css('.c-sumario::text').get()
+            item['url'] = response.url
 
         yield item
+
+
+    def is_valid_date(self, value):
+        # A data extraída está no seguinte formato: [DD/MM/YYYY]
+        FROM_DATE = date(2018, 1, 1)
+        value = value.strip('[]')
+        day, month, year = value.split('/')
+        pub_date = date(int(year), int(month), int(day))
+
+        return pub_date > FROM_DATE
 
 
