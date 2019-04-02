@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 import scrapy
 import json
-import urllib.parse
+from urllib.parse import urlsplit, urljoin
 
 from ri_lab_01.items import RiLab01Item
 from ri_lab_01.items import RiLab01CommentItem
+from ri_lab_01.loaders import RiLab01Loader
 from datetime import date
 
 
@@ -20,32 +21,36 @@ class GazetaDoPovoSpider(scrapy.Spider):
         self.start_urls = list(data.values())
 
     def parse(self, response):
-        last_news_links = [a.attrib['href'] for a in response.css('.ultimas-chamadas a')]
+        pag_ativa = response.css('.pg-ativa::text').get()
+        last_news_links = [a.attrib['href'] for a in response.css('.ultimas-chamadas a') if self.is_valid_date(a.attrib['data-publication'])]
         for url in last_news_links:
-            url = urllib.parse.urljoin('https://www.gazetadopovo.com.br', url)
+            url = urljoin('https://www.gazetadopovo.com.br', url)
             yield scrapy.Request(url, callback=self.parse_news_page)
 
+        if last_news_links:
+            new_page = pag_ativa + 1
+            updated_url = urlsplit(response.url)._replace(query='offset=${new_page}').geturl()
+            yield scrapy.Request(updated_url, self.parse)
+
     def parse_news_page(self, response):
-        item = RiLab01Item()
-        pub_date_value = response.css('.data-publicacao time::text').get()
-        if pub_date_value and self.is_valid_date(pub_date_value):
-            item['_id'] = '1'
-            item['title'] = response.css('.c-titulo::text').get()
-            item['sub_title'] = response.css('.c-sobretitulo span::text').get()
-            item['author'] = response.css('.c-autor span::text').get()
-            item['date'] = pub_date_value
-            item['section'] = response.xpath('/html/body/div[2]/section[2]/section[1]/ol/li[2]/a/span/text()').extract_first()
-            item['text'] = response.css('.c-sumario::text').get()
-            item['url'] = response.url
+        loader = RiLab01Loader(item=RiLab01Item(), response=response)
+        url = response.url
 
-        yield item
+        loader.add_value('_id', '1')
+        loader.add_css('title', '.c-titulo::text')
+        loader.add_css('sub_title', '.c-sobretitulo span::text')
+        loader.add_css('author', '.c-autor span::text')
+        loader.add_css('date', '.data-publicacao time::text')
+        loader.add_value('section', url.split('/')[3])
+        loader.add_css('text', '.c-sumario::text')
+        loader.add_value('url', url)
 
+        return loader.load_item()
 
     def is_valid_date(self, value):
-        # A data extraída está no seguinte formato: [DD/MM/YYYY]
+        # A data extraída está no seguinte formato: YYYY-MM-DD
         FROM_DATE = date(2018, 1, 1)
-        value = value.strip('[]')
-        day, month, year = value.split('/')
+        year, month, day = value.split('-')
         pub_date = date(int(year), int(month), int(day))
 
         return pub_date > FROM_DATE
