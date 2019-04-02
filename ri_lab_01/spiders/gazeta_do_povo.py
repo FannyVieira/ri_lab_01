@@ -21,14 +21,14 @@ class GazetaDoPovoSpider(scrapy.Spider):
         self.start_urls = list(data.values())
 
     def parse(self, response):
-        pag_ativa = response.css('.pg-ativa::text').get()
+        active_page = int(response.css('.pg-ativa::text').get())
         last_news_links = [a.attrib['href'] for a in response.css('.ultimas-chamadas a') if self.is_valid_date(a.attrib['data-publication'])]
         for url in last_news_links:
             url = urljoin('https://www.gazetadopovo.com.br', url)
             yield scrapy.Request(url, callback=self.parse_news_page)
 
         if last_news_links:
-            new_page = pag_ativa + 1
+            new_page = active_page + 1
             updated_url = urlsplit(response.url)._replace(query='offset=${new_page}').geturl()
             yield scrapy.Request(updated_url, self.parse)
 
