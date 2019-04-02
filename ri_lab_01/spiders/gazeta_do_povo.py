@@ -40,6 +40,7 @@ class GazetaDoPovoSpider(scrapy.Spider):
         loader.add_css('title', '.c-titulo::text')
         loader.add_css('sub_title', '.c-sobretitulo span::text')
         loader.add_css('author', '.c-autor span::text')
+        loader.add_css('author', '.item-agency::text')
         loader.add_css('date', '.data-publicacao time::text')
         loader.add_value('section', url.split('/')[3])
         loader.add_css('text', '.c-sumario::text')
