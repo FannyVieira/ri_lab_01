@@ -23,10 +23,13 @@ class GazetaDoPovoSpider(scrapy.Spider):
 
     def parse(self, response):
         active_page = int(response.css('.pg-ativa::text').get())
+        page_request_count = 0
         last_news_links = [a.attrib['href'] for a in response.css('.ultimas-chamadas a') if self.is_valid_date(a.attrib['data-publication'])]
+
         for url in last_news_links:
+            page_request_count += 1
             url = urljoin('https://www.gazetadopovo.com.br', url)
-            yield scrapy.Request(url, callback=self.parse_news_page, meta={'page_count': self.crawler.stats.get_value('request_count')})
+            yield scrapy.Request(url, callback=self.parse_news_page, meta={'page_count': page_request_count})
 
         if last_news_links:
             new_page = active_page + 1
@@ -40,15 +43,15 @@ class GazetaDoPovoSpider(scrapy.Spider):
         loader.add_value('_id', response.meta.get('page_count'))
         loader.add_css('title', '.c-titulo::text')
         loader.add_css('title', '.c-title::text')
+        loader.add_css('title', '[class*="title"]')
         loader.add_css('sub_title', '.c-sobretitulo span::text')
         loader.add_css('sub_title', 'c-overhead span::text')
-        loader.add_css('author', '.c-autor span::text')
+        loader.add_css('author', '[class*="autor"] span::text')
         loader.add_css('author', '.item-agency::text')
         loader.add_css('author', '.item-name span::text')
         loader.add_css('date', '.data-publicacao time::text')
         loader.add_value('section', url.split('/')[3])
-        loader.add_css('text', '.c-sumario::text')
-        loader.add_css('text', '.c-summary::text')
+        loader.add_css('text', 'p::text')
         loader.add_value('url', url)
 
         self.write_in_frontier(loader)
@@ -60,8 +63,6 @@ class GazetaDoPovoSpider(scrapy.Spider):
             title = loader.get_output_value('_id')
             url = loader.get_output_value('url')
             data = {title: url}
-            print(title, url)
-            print("=======\n\n\n")
             json.dump(data, json_file)
 
     def is_valid_date(self, value):
