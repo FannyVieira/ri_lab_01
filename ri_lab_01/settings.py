@@ -16,6 +16,8 @@ NEWSPIDER_MODULE = 'ri_lab_01.spiders'
 
 DEADLINE = "01.01.2018" # DD.MM.YYYY
 
+CLOSESPIDER_PAGECOUNT= 100
+
 USER_AGENTS = [
     ('Mozilla/5.0 (X11; Linux x86_64) '
      'AppleWebKit/537.36 (KHTML, like Gecko) '
