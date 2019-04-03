@@ -1,17 +1,116 @@
 _id,author,date,section,sub_title,text,title,url
-,,,,,,,
-,,,,,,,
-1,Angela Vidal Gandra Martins,[01/04/2019],,Artigo,"O fecundo debate que suscitou o 8.º Congresso das Famílias, em Verona, na Itália, evidencia uma saudável preocupação global com a família",A família é um evento e uma preocupação mundial,https://www.gazetadopovo.com.br/opiniao/artigos/a-familia-e-um-evento-e-uma-preocupacao-mundial-bgutjl9y4kmlzpp2r5fg6qgyp/
-,,,,,,,
-1,Olavo Soares,[01/04/2019],,duro na queda,Acusação sobre candidaturas de fachada no PSL mineiro completa dois meses sem ter abalado o cargo de Marcelo Álvaro Antônio. Oposição tirou foco do ministro para combater a reforma da Previdência,Ministro resiste às denúncias sobre candidatos laranja do PSL e vai ficando...,https://www.gazetadopovo.com.br/politica/republica/ministro-resiste-as-denuncias-sobre-candidatos-laranja-do-psl-e-vai-ficando-0ks0yf1f3wiej3op368ygnhxa/
-1,,[01/04/2019],,caneta,Líderes de 13 partidos que somam a maioria da Câmara são contra dispositivos que retiram da Constituição as regras de aposentadorias,Líderes articulam primeiros rascunhos para mudanças na PEC da Previdência já na CCJ,https://www.gazetadopovo.com.br/politica/republica/lideres-articulam-primeiros-rascunhos-para-mudancas-na-pec-da-previdencia-ja-na-ccj-6b9ru13bol34p7gamlgs9y069/
-1,Gazeta do Povo com Folhapress,[01/04/2019],,presidente armado,"Imagem foi publicada na conta oficial do presidente no Instagram. A agenda de Bolsonaro em Israel, contudo, está mais curta",Bolsonaro posa para foto com fuzil israelense e defende armamento civil,https://www.gazetadopovo.com.br/politica/republica/bolsonaro-posa-para-foto-com-fuzil-israelense-e-defende-armamento-civil-3uqwa7ez8p4s912mm82nycdpd/
-1,,[01/04/2019],,Relógio,Ministro de Minas e Energia diz que presidente receberá dados técnicos na semana que vem sobre a efetividade do horário especial que tanto irrita os brasileiros,Fim do horário de verão? Bolsonaro aguarda estudo técnico para decidir,https://www.gazetadopovo.com.br/politica/republica/fim-do-horario-de-verao-bolsonaro-aguarda-estudo-tecnico-para-decidir-a89a5j88vawu5bz37oq8q45ep/
-1,"Gazeta do Povo, com agências",[01/04/2019],,pressão,"Por um lado, os evangélicos queriam o anúncio de transferência da embaixada e não “apenas um escritório”. Por outro, ruralistas se assustam com risco de retaliação comercial do mundo árabe",Não é só a Palestina: evangélicos e ruralistas protestam contra escritório em Jerusalém,https://www.gazetadopovo.com.br/politica/republica/nao-e-so-a-palestina-evangelicos-e-ruralistas-protestam-contra-escritorio-em-jerusalem-9qzfov1yej9bgynb0c9fbfejl/
-1,Gazeta do Povo,[01/04/2019],,Navegação,Veja como é a funcionalidade do site da Gazeta que permite ao usuário ver como está sua navegação,Conheça o Leiturômetro da Gazeta do Povo,https://www.gazetadopovo.com.br/conheca-a-gazeta/conheca-o-leiturometro-da-gazeta-do-povo-3v0i131adr17jnbpvaz3nth0h/
-1,Luana Kaseker,[01/04/2019],Esportes,violência,,Demafe abre inquérito e pede ajuda para identificar ‘brigões’ de Coritiba e Paraná,https://www.gazetadopovo.com.br/esportes/demafe-abre-inquerito-e-pede-ajuda-para-identificar-brigoes-de-coritiba-e-parana-88yul4jnd4gj84y0mkcedcva9/
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-1,William Saab,[01/04/2019],Economia,gestão,Diversos segmentos empresarias estão investindo em operações que geram menos lixo; resultados são positivos tanto para empresas quanto aos clientes,De MRV a McDonald’s: ideias práticas para fazer negócios mais sustentáveis,https://www.gazetadopovo.com.br/economia/de-mrv-a-mcdonalds-ideias-praticas-para-fazer-negocios-mais-sustentaveis-dpj4qp2p35srto5jhoc89uyda/
+,Agência Estado,,republica,,,Populares,https://www.gazetadopovo.com.br/republica/moro-da-posse-a-conselheiro-que-considera-homossexualidade-desvio-de-conduta/
+,Gazeta do Povo com Folhapress,,mundo,,,Populares,https://www.gazetadopovo.com.br/mundo/constituinte-chavista-retira-imunidade-parlamentar-de-guaido/
+,Catarina Scortecci,,parana,,,Populares,https://www.gazetadopovo.com.br/parana/reforma-administrativa-nao-saiu-da-ccj/
+,,,colunistas,,,"Sabe quanto custa um pardal na estrada? Pelo preço, melhor cancelar mesmo",https://www.gazetadopovo.com.br/colunistas/alexandre-garcia/2019/04/02/sabe-quanto-custa-um-pardal-na-estrada-pelo-preco-melhor-cancelar-mesmo/
+,Gazeta do Povo,,curitiba,,,Populares,https://www.gazetadopovo.com.br/curitiba/cachorro-ataca-crianca-em-curitiba/
+,Catarina Scortecci,,parana,,,Populares,https://www.gazetadopovo.com.br/parana/quadro-negro-servidor-do-tribunal-de-contas-vira-reu/
+,Renyere Trovão,,automoveis,,,Populares,https://www.gazetadopovo.com.br/automoveis/vendas-onibus-alta-supera-crise/
+,,,viver-bem,,,"
+                        ",https://www.gazetadopovo.com.br/viver-bem/comportamento/desafiar-masculinidade-tradicional-bom-para-homens/
+,Carlos Strapazzon,[01/04/2019],opiniao,Sínteses – O critério de escolha dos ministros do STF deve mudar?,O STF não é uma instituição democrática. Nem deve ser. É uma função da República,Agora é o STF,https://www.gazetadopovo.com.br/opiniao/artigos/agora-e-o-stf-4izsln2w2zbue90qw25v5zgbl/
+,Rodrigo Lins,[02/04/2019],opiniao,Artigo,Uma grande tendência imigratória global que já exige dos governos uma estratégia política voltada para a questão,Onda imigratória global já é desafio a governos em todo o mundo,https://www.gazetadopovo.com.br/opiniao/artigos/onda-imigratoria-global-ja-e-desafio-a-governos-em-todo-o-mundo-7l03ntfwfi80ywgzmxibpus0x/
+,Eliane Guerra,[01/04/2019],opiniao,Artigo,"O diagnóstico precoce permite o rápido tratamento, que potencializa o desenvolvimento infantil e minimiza as dificuldades enfrentadas pelas crianças autistas",Modelo Denver: a vida de um autista menos traumática,https://www.gazetadopovo.com.br/opiniao/artigos/modelo-denver-a-vida-de-um-autista-menos-traumatica-aipq5e0w0c91whtvmdyzkze66/
+,Moreno Valério,[03/04/2019],esportes,LIBERTADORES,,"“Uma noite mágica que será lembrada por muitos anos”, resume técnico do Athletico",https://www.gazetadopovo.com.br/esportes/athletico/uma-noite-magica-que-sera-lembrada-por-muitos-anos-resume-tecnico-do-athletico-2brz5240cirlvpsi0whzgst41/
+,Gazeta do Povo,[02/04/2019],esportes,novo uniforme,,Coritiba lança nova camisa 3; veja fotos e saiba o preço,https://www.gazetadopovo.com.br/esportes/coritiba/coritiba-lanca-nova-camisa-3-veja-fotos-e-saiba-o-preco-4latyblh3kc64b16sjqx28tpd/
+,,,materias,,,"
+                        ",https://guia.gazetadopovo.com.br/materias/comida-di-buteco-2019-conheca-os-participantes/
+,Gazeta do Povo,[01/04/2019],opiniao,editorial,O Congresso dá sinais de pouca responsabilidade diante dos tropeços do presidente Jair Bolsonaro (PSL) em desenhar uma estratégia de diálogo com os parlamentares,A responsabilidade do Congresso ,https://www.gazetadopovo.com.br/opiniao/editoriais/a-responsabilidade-do-congresso-4r6wmbratodzttyriwka3byht/
+,,,viver-bem,,,,https://www.gazetadopovo.com.br/viver-bem/saude-e-bem-estar/mitos-verdades-autismo-cura/
+,Gazeta do Povo e Folhapress,,mundo,,,Populares,https://www.gazetadopovo.com.br/mundo/apos-serie-de-apagoes-maduro-demite-ministro-da-energia/
+,,,viver-bem,,,"
+                        ",https://www.gazetadopovo.com.br/viver-bem/saude-e-bem-estar/nao-consegue-dormir-saiba-identificar-o-seu-disturbio-de-sono/
+,,,viver-bem,,,"
+                        ",https://www.gazetadopovo.com.br/viver-bem/saude-e-bem-estar/prefeitura-descarta-meningite-como-causa-da-morte-de-neto-de-lula/
+,,,bomgourmet,,,"
+                        ",https://www.gazetadopovo.com.br/bomgourmet/como-fazer-molho-de-tomate-bem-feito/
+,,,viver-bem,,,"
+                        ",https://www.gazetadopovo.com.br/viver-bem/saude-e-bem-estar/acucar-pode-ter-20-nomes-diferentes/
+,,,blogs,,,"Filiação de Greca ao DEM acontece nesta quarta-feira, em Brasília",https://www.gazetadopovo.com.br/blogs/joao-frey/2019/04/02/filiacao-de-greca-ao-dem-acontece-na-quarta-feira-em-brasilia/
+,"Gazeta do Povo, com Estadão Conteúdo",,republica,,,Populares,https://www.gazetadopovo.com.br/republica/servidor-aposentadoria-integral-reforma-previdencia/
+,,,haus,,,"
+                        ",https://www.gazetadopovo.com.br/haus/arquitetura/sao-paulo-recebe-exposicoes-ineditas-de-oscar-niemeyer-e-lina-bo-bardi/
+,,02/04/2019 |,agronegocio,,"Região do Matopiba sofre com estradas esburacadas, falta de ferrovias e hidrovias, problemas fundiários e pouca capacidade de armazenagem de grãos","
+				",https://www.gazetadopovo.com.br/agronegocio/expedicoes/expedicao-safra/2018-2019/sem-estradas-e-ferrovias-agricultores-poe-o-pe-no-freio-na-producao-de-graos-9muikrlenstls9vbzbpl33dk1/
+,,,rodrigo-constantino,,,,https://www.gazetadopovo.com.br/rodrigo-constantino/artigos/o-metodo-gurdjieff-de-olavo-de-carvalho-e-um-recado-para-sua-seita-ninguem-esta-acima-de-criticas/
+,,,bomgourmet,,,"
+                        ",https://www.gazetadopovo.com.br/bomgourmet/frutas-diferentes-coloridas/
+,"Gazeta do Povo, com agências",,automoveis,,,Populares,https://www.gazetadopovo.com.br/automoveis/caoa-fabrica-ford-caminhoes-abc/
+,Virginia Lopez-Glass,[02/04/2019],opiniao,Artigo,"Se o primeiro blecaute expôs como décadas de más administrações destruíram a economia e a infraestrutura do país, o último não deixou esperança de que o governo tenha capacidade de encontrar soluções","A Venezuela mergulhada na escuridão, literalmente",https://www.gazetadopovo.com.br/opiniao/artigos/a-venezuela-mergulhada-na-escuridao-literalmente-2tsglzfou98o48m42b0qb81up/
+,Gazeta do Povo,,curitiba,,,Populares,https://www.gazetadopovo.com.br/curitiba/curitiba-binario-nova-aurora-ourizona-sitio-cercado/
+,Isabelle Barone,,educacao,,,Populares,https://www.gazetadopovo.com.br/educacao/eu-era-uma-aluna-terrivel-como-a-presenca-de-militares-em-escolas-esta-mudando-comunidades/
+,,,colunistas,,,Intimidade com Deus,https://www.gazetadopovo.com.br/colunistas/luiz-felipe-ponde/2019/04/01/intimidade-com-deus/
+,,,blogs,,,"Com sorteio de carro e sem banco de reservas, começa o Cartola FC 2019",https://www.gazetadopovo.com.br/blogs/cartoleiros/2019/04/02/com-sorteio-de-carro-e-sem-banco-de-reservas-comeca-o-cartola-fc-2019/
+,Folhapress,,politica,,A estimativa que o Planalto tem apresentado a deputados não inclui efeitos da reestruturação da carreira das Forças Armadas,Populares,https://www.gazetadopovo.com.br/politica/republica/militares-e-servidores-civis-perdem-mais-na-reforma-da-previdencia-diz-governo-0smvcwk0uzcetajxk6eo2mjj5/
+,Nanthaniel Popper,[01/04/2019],economia,tecnologia,"Engenheiro de criptomoedas, Jameson Lopp contou ao NYT como consegue viver fora do radar após ter sido ameaçado","Como esse americano conseguiu desaparecer da web, em 15 passos",https://www.gazetadopovo.com.br/economia/como-esse-americano-conseguiu-desaparecer-da-web-em-15-passos-1xl7117h4actrfg3zbtqjittq/
+,,,colunistas,,,O que esperar dos seus investimentos pós-março?,https://www.gazetadopovo.com.br/colunistas/roberto-indech/2019/04/01/investimentos-pos-marco/
+,"Helena Carnieri, especial para a Gazeta do Povo",,educacao,,,Populares,https://www.gazetadopovo.com.br/educacao/professor-de-engenharia-conta-como-aprendeu-a-dar-aulas-para-alunos-conectados/
+,João Frey,,parana,,,Populares,https://www.gazetadopovo.com.br/parana/escritorio-do-parana-em-brasilia/
+,,,colunistas,,,Da Ucrânia pode se esperar o imprevisível,https://www.gazetadopovo.com.br/colunistas/filipe-figueiredo/2019/04/01/da-ucrania-pode-se-esperar-o-imprevisivel/
+,Estadão Conteúdo,,politica,,,Populares,https://www.gazetadopovo.com.br/politica/republica/filho-de-bolsonaro-compara-golpe-de-1964-a-um-impeachment-4rouoynlmlnslrsr2nxcclt32/
+,"Gabriel Sawaf, especial para a Gazeta do Povo",[31/03/2019],esportes,Paranaense,,"Athletico perde para o Londrina, mas disputa semifinal na Arena",https://www.gazetadopovo.com.br/esportes/athletico/athletico-perde-para-o-londrina-mas-disputa-semifinal-na-arena-a3j2recgjqx7272clgs4i44n2/
+,,,blogs,,,Boca Aberta é condenado a 22 dias de prisão por perturbação do trabalho alheio,https://www.gazetadopovo.com.br/blogs/joao-frey/2019/04/01/boca-aberta-e-condenado-a-22-dias-de-prisao-por-perturbacao-do-trabalho-alheio/
+,,,colunistas,,,"Por um governo mais Tarcísio, trabalhador e eficaz",https://www.gazetadopovo.com.br/colunistas/pedro-menezes/por-um-governo-mais-tarcisio-trabalhador-e-eficaz/
+,João Pedro Paro,[31/03/2019],opiniao,Artigo,Qualquer um diria que o parecer da Consultoria do Senado foi infeliz ao afastar a possibilidade de investigação pelo Senado Federal,"CPI da Lava Toga, ou quem vigia os vigilantes?",https://www.gazetadopovo.com.br/opiniao/artigos/cpi-da-lava-toga-ou-quem-vigia-os-vigilantes-cg4v2kjs75a4t646k3ih9bfy6/
+,Gazeta do Povo,[30/03/2019],opiniao,Editorial,"A tensão entre Nicolás Maduro e Juan Guaidó tem aumentado; e a comunidade internacional deve buscar, o quanto antes, o retorno da normalidade democrática à Venezuela",Qual será o destino da Venezuela?,https://www.gazetadopovo.com.br/opiniao/editoriais/qual-sera-o-destino-da-venezuela-aeemub9pkj67e70zduf4mt4la/
+,Marcio Coimbra,[31/03/2019],opiniao,Artigo,"Os brasileiros podem se orgulhar de sua política externa, que defende os valores da pátria sem medo de desagradar os setores minoritários avessos às mudanças","Vox populi, vox Dei: A política externa da mudança",https://www.gazetadopovo.com.br/opiniao/artigos/vox-populi-vox-dei-a-politica-externa-da-mudanca-5pqjhqjb2xp6ia4ht2qhjykce/
+,,,bomgourmet,,,"
+                        ",https://www.gazetadopovo.com.br/bomgourmet/como-fazer-recheio-ovo-de-colher/
+,,,viver-bem,,,"
+                        ",https://www.gazetadopovo.com.br/viver-bem/saude-e-bem-estar/acucar-de-adicao-deve-ser-eliminado-da-dieta-de-criancas-ate-os-dois-anos/
+,,,bomgourmet,,,"
+                        ",https://www.gazetadopovo.com.br/bomgourmet/ultimo-final-de-semana-do-festival-bom-gourmet/
+,,,materias,,,"
+                        ",https://guia.gazetadopovo.com.br/materias/bares-promovem-esquenta-para-o-show-do-paul-mccartney/
+,Folhapress,,politica,,,Populares,https://www.gazetadopovo.com.br/politica/republica/em-meio-a-ameaca-de-paralisacao-video-com-bolsonaro-e-ministro-lista-medidas-e-fala-em-amor-pelos-caminhoneiros-4ndw9t4ks69t2pyfdtt84qi66/
+,Gazeta do Povo,,curitiba,,,Populares,https://www.gazetadopovo.com.br/curitiba/show-do-paul-mccartney-complica-transito-de-curitiba-neste-sabado/
+,Renan Barbosa,,politica,,"Cercado de expectativas pela polêmica sobre a transferência da embaixada para Jerusalém, governo se equilibra entre pressões de exportadores e intenção de alinhamento aos Estados Unidos e a Israel ",Populares,https://www.gazetadopovo.com.br/politica/republica/alinhamento-ideologico-ou-interesses-o-que-esta-em-jogo-na-viagem-de-bolsonaro-a-israel-06krs98bpakzda19jkmxfex6m/
+,Fernando Rudnick,[30/03/2019],esportes,federação paranaense de futebol,,"Sem bate-chapa na eleição da FPF, Hélio Cury é reeleito até 2023",https://www.gazetadopovo.com.br/esportes/sem-bate-chapa-na-eleicao-da-fpf-helio-cury-e-reeleito-ate-2023-0yb8kb12qxdkl2logptc0nmny/
+,,,blogs,,,Energia para empreender em mercados emergentes,https://www.gazetadopovo.com.br/blogs/parana-sa/2019/03/30/energia-para-empreender-em-mercados-emergentes/
+,"Marina Pilato, especial para a Gazeta do Povo",,curitiba,,,Populares,https://www.gazetadopovo.com.br/curitiba/paulo-hilario-bonametti-precursor-do-rock-paranaense/
+,Folhapress,,politica,,,Populares,https://www.gazetadopovo.com.br/politica/republica/governo-prepara-mudanca-na-tributacao-das-empresas-diz-bolsonaro-no-twitter-2gps7hlww64h9m0op5f5vasn2/
+,The New York Times,,mundo,,,Populares,https://www.gazetadopovo.com.br/mundo/um-pastor-usa-a-fe-para-denunciar-viktor-orban-como-simbolo-do-fascismo/
+,,,instituto-politeia,,,"
+                        ",https://www.gazetadopovo.com.br/instituto-politeia/3-razoes-nova-providencia-2/
+,Gazeta do Povo,,ideias,,,Populares,https://www.gazetadopovo.com.br/ideias/ideias-98-a-ditadura-militar-brasileira-deve-ser-comemorada/
+,,,materias,,,"
+                        ",https://guia.gazetadopovo.com.br/materias/onde-paul-mc-cartney-tomou-cafe-da-manha/
+,"Paulo Coelho, Washington Post",,ideias,,,Populares,https://www.gazetadopovo.com.br/ideias/paulo-coelho-tortura-ditadura-militar/
+,Bénédicte de Montlaur,[31/03/2019],opiniao,Artigo,"Alguns educadores e pais estão repensando a forma como os idiomas são ensinados, e têm pedido mais acesso à educação linguística",Você fala minha língua? Pois deveria,https://www.gazetadopovo.com.br/opiniao/artigos/voce-fala-minha-lingua-pois-deveria-70qjbpfbh2qd3gn9pl5i093lq/
+,Dana Thomas,[29/03/2019],economia,empreendedorismo,A Flowerbx tem quatro anos é a floricultura preferida de marcas como Louis Vuitton. Entenda porquê,A ex-diretora da Tom Ford que montou a floricultura mais queridinha do mundo da moda,https://www.gazetadopovo.com.br/economia/a-ex-diretora-da-tom-ford-que-montou-a-floricultura-mais-queridinha-do-mundo-da-moda-424srugznj26gl1zgxvh2jj20/
+,,,viver-bem,,,"
+                        ",https://www.gazetadopovo.com.br/viver-bem/saude-e-bem-estar/frescura-ir-ao-banheiro-fora-de-casa-pode-ser-dificil/
+,,,bomgourmet,,,"
+                        ",https://www.gazetadopovo.com.br/bomgourmet/ovo-de-empada-de-frango-pascoa/
+,,,viver-bem,,,"
+                        ",https://www.gazetadopovo.com.br/viver-bem/comportamento/vendedor-da-aula-de-simpatia-e-paciencia-ao-atender-cliente-cego/
+,Folhapress,,politica,,"“Eu amo Israel”, disse o presidente brasileiro, em hebraico, ao lado do primeiro-ministro do país, Binyamin Netanyahu",Populares,https://www.gazetadopovo.com.br/politica/republica/como-poderemos-ser-iguais-a-eles-ter-a-mesma-fe-que-eles-tem-diz-bolsonaro-em-israel-a7rbrtr7f2fte38qfve3tbm8x/
+,,,blogs,,,Como o fim da aliança MDB e PT reconfigura a oposição no Paraná,https://www.gazetadopovo.com.br/blogs/joao-frey/2019/03/30/como-o-fim-da-alianca-mdb-e-pt-reconfigura-a-oposicao-no-parana/
+,Estadão Conteúdo,,mundo,,,Populares,https://www.gazetadopovo.com.br/mundo/criticas-mujica-defesa-austeridade-favorito-presidencia-uruguai-lacalle-pou/
+,,,blogs,,,Estados da região sul somam 40 concursos com inscrições abertas,https://www.gazetadopovo.com.br/blogs/concurseiros/2019/03/31/estados-da-regiao-sul-somam-40-concursos-com-inscricoes-abertas/
+,,,haus,,,"
+                        ",https://www.gazetadopovo.com.br/haus/decoracao/a-beleza-do-marmore-em-8-pecas-de-decoracao-a-partir-de-r-50/
+,"Tiago Cordeiro, especial para a Gazeta do Povo",,ideias,,,Populares,https://www.gazetadopovo.com.br/ideias/mario-kozel-filho-o-jovem-morto-por-terroristas-de-esquerda/
+,,,colunistas,,,Tábata nos mostra o caminho,https://www.gazetadopovo.com.br/colunistas/mario-vitor-rodrigues/tabata-nos-mostra-o-caminho/
+,Gazeta do Povo,,politica,,,Populares,https://www.gazetadopovo.com.br/politica/republica/bolsonaro-cancela-instalacao-de-milhares-de-radares-em-rodovias-federais-554ym5k7q0ap6p5t84bmls6sh/
+,"Lucas Sarzi, Tribuna do Paraná",,curitiba,,,Populares,https://www.gazetadopovo.com.br/curitiba/empresario-encontrado-morto-em-lancha-guaratuba/
+,*Leandro Nogueira,,educacao,,Chapas de oposição questionam falta de transparência em contrato firmado com o BNDES,Populares,https://www.gazetadopovo.com.br/educacao/processo-de-escolha-de-reitor-da-ufrj-desafia-determinacao-do-mec/
+,,,materias,,,"
+                        ",https://guia.gazetadopovo.com.br/materias/corrida-drones-arena-baixada-curitiba-pela-primeira-vez/
+,Gazeta do Povo,,curitiba,,,Populares,https://www.gazetadopovo.com.br/curitiba/manifestantes-fazem-ato-contra-a-ditadura-militar-em-curitiba/
+,,,bomgourmet,,,"
+                        ",https://www.gazetadopovo.com.br/bomgourmet/cinco-mulheres-da-campanha-gaucha/
+,"Gabriel Sawaf, especial para a Gazeta do Povo",[31/03/2019],esportes,paranaense,,"Revés para o Londrina serviu para jovens do Athletico ganharem maturidade, diz Guanaes",https://www.gazetadopovo.com.br/esportes/athletico/reves-para-o-londrina-serviu-para-jovens-doathletico-ganharem-maturidade-diz-guanaes-1bd57byaov6y9u9garrxofzoh/
+,Fernando Rudnick,[31/03/2019],esportes,clássico em sjp,,Coritiba x Paraná no Pinhão teve clima “raiz”: confira os bastidores,https://www.gazetadopovo.com.br/esportes/coritiba-x-parana-no-pinhao-teve-clima-raiz-confira-os-bastidores-4054r4oa3r5t47e4v0jouudlt/
+,Gazeta do Povo e Folhapress,,politica,,"Em São Paulo, houve confusão entre grupos rivais. Rio de Janeiro, Brasília, Curitiba, Porto Alegre e Belo Horizonte também registraram atos",Populares,https://www.gazetadopovo.com.br/politica/republica/no-aniversario-do-golpe-capitais-tem-manifestacoes-contra-a-ditadura-militar-5ae04fac8us302x3e26r7lqw1/
+,,,blogs,,,Liderança e pioneirismo da curitibana Alô Ingressos,https://www.gazetadopovo.com.br/blogs/parana-sa/2019/03/31/lideranca-e-pioneirismo-da-curitibana-alo-ingressos/
+,Gazeta do Povo,,politica,,Ministro da Justiça diz que desentendimento com Rodrigo Maia foi “superdimensionado” e que parlamentares têm demonstrado apoio à medida,Populares,https://www.gazetadopovo.com.br/politica/republica/moro-acredita-que-projeto-anticrime-sera-aprovado-ainda-este-ano-326zecb9wmuk1zxbm7qumq5wh/
+,,,bomgourmet,,,"
+                        ",https://www.gazetadopovo.com.br/bomgourmet/muito-mais-que-entretenimento-masterchef-da-aula-de-tecnicas-para-o-publico/
+,Gazeta do Povo e Agência Estado,,mundo,,,Populares,https://www.gazetadopovo.com.br/mundo/maduro-anuncia-racionamento-de-energia-na-venezuela/
+,Gazeta do Povo,,mundo,,,Populares,https://www.gazetadopovo.com.br/mundo/duas-pessoas-sao-baleadas-durante-protesto-na-venezuela/
+,Luana Kaseker,[31/03/2019],esportes,paranaense,,"Decisivo, Muralha se destaca na classificação do Coritiba",https://www.gazetadopovo.com.br/esportes/coritiba/decisivo-muralha-se-destaca-na-classificacao-do-coritiba-8p7rcdoqv7yfg86rotz6h7v5q/
+,,,colunistas,,,"No período militar, eu levei um golpe da esquerda. Bem na costela",https://www.gazetadopovo.com.br/colunistas/alexandre-garcia/2019/03/31/no-periodo-militar-eu-levei-um-golpe-da-esquerda-bem-na-costela/
+,,,materias,,,"
+                        ",https://guia.gazetadopovo.com.br/materias/paul-mccartney-em-curitiba-pontualidade-britanica/
+,,,blogs,,,Athletico e Coritiba surgem com favoritismo para as semis da Taça Dirceu Krüger,https://www.gazetadopovo.com.br/blogs/carneiro-neto/2019/03/31/carneiro-neto-athletico-coritiba-favoritos/
