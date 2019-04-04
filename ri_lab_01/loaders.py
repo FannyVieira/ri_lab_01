@@ -13,3 +13,7 @@ class RiLab01Loader(ItemLoader):
 
     default_output_processor = TakeFirst()
     text_out = Join()
+
+class RiLab01CommentLoader(ItemLoader):
+
+    default_output_processor = TakeFirst()

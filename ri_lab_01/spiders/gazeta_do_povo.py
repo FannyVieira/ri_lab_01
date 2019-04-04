@@ -5,7 +5,7 @@ from urllib.parse import urlsplit, urljoin
 
 from ri_lab_01.items import RiLab01Item
 from ri_lab_01.items import RiLab01CommentItem
-from ri_lab_01.loaders import RiLab01Loader
+from ri_lab_01.loaders import RiLab01Loader, RiLab01CommentLoader
 from ri_lab_01.util.date import is_valid_date
 from ri_lab_01.util.file import write_in_frontier
 from ri_lab_01.util.seletor import get_value_by_selector
@@ -34,6 +34,7 @@ class GazetaDoPovoSpider(scrapy.Spider):
         for url in news_links:
             page_request_count += 1
             url = urljoin('https://www.gazetadopovo.com.br', url)
+            # for get comments section use "callback=self.parse_comments_section"
             yield scrapy.Request(url, callback=self.parse_news_page, meta={'page_count': page_request_count})
 
         if news_links:
@@ -59,6 +60,16 @@ class GazetaDoPovoSpider(scrapy.Spider):
         write_in_frontier(loader)
 
         return loader.load_item()
+
+    def parse_comments_section(self, response):
+        loader = RiLab01CommentLoader(item=RiLab01CommentItem(), response=response)
+        loader.add_value('id_article', '')
+        loader.add_css('author', '.user-name::text')
+        loader.add_css('date', '.age::text')
+        loader.add_css('text', '.comment::text')
+
+        return loader.load_item()
+
 
     def get_new_url_by_pagination(self, response):
         active_page = int(get_value_by_selector(response,'.pg-ativa::text').get())
