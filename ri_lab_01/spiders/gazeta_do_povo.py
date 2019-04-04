@@ -29,14 +29,14 @@ class GazetaDoPovoSpider(scrapy.Spider):
 
     def parse_pagination_page(self, response):
         page_request_count = 0
-        last_news_links = [a.attrib['href'] for a in get_value_by_selector(response,'.c-chamada a')]
+        news_links = [a.attrib['href'] for a in get_value_by_selector(response,'.c-chamada a')]
 
-        for url in last_news_links:
+        for url in news_links:
             page_request_count += 1
             url = urljoin('https://www.gazetadopovo.com.br', url)
             yield scrapy.Request(url, callback=self.parse_news_page, meta={'page_count': page_request_count})
 
-        if last_news_links:
+        if news_links:
             updated_url = self.get_new_url_by_pagination(response)
             yield scrapy.Request(updated_url, self.parse_pagination_page)
 
