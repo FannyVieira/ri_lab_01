@@ -46,6 +46,7 @@ class GazetaDoPovoSpider(scrapy.Spider):
             # for get comments section use "callback=self.parse_comments_section"
             yield scrapy.Request(url, callback=self.parse_news_page, meta={'page_count': page_request_count})
 
+        # for limit the count of requests, i set 'CLOSESPIDER_PAGECOUNT= 200' on settings file.
         if news_links:
             updated_url = self.get_new_url_by_pagination(response)
             yield scrapy.Request(updated_url, self.parse_pagination_page)
