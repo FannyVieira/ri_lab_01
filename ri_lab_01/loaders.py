@@ -6,7 +6,7 @@
 # https://docs.scrapy.org/en/latest/topics/loaders.html
 
 from scrapy.loader import ItemLoader
-from scrapy.loader.processors import TakeFirst, Join
+from scrapy.loader.processors import TakeFirst, MapCompose, Join
 
 
 class RiLab01Loader(ItemLoader):
