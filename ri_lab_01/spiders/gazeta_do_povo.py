@@ -15,6 +15,7 @@ class GazetaDoPovoSpider(scrapy.Spider):
     name = 'gazeta_do_povo'
     allowed_domains = ['gazetadopovo.com.br']
     start_urls = []
+    page_request_count = 0
 
     def __init__(self, *a, **kw):
         super(GazetaDoPovoSpider, self).__init__(*a, **kw)
@@ -24,6 +25,7 @@ class GazetaDoPovoSpider(scrapy.Spider):
 
     def parse(self, response):
         """Get the list of urls from sections of the Gazeta's site(e.g 'ultimas-noticias', 'populares', etc)
+
         :param response: the html response from scrapy download
         :return scrapy.Item: a iterable list of items extracted
         """
@@ -34,17 +36,17 @@ class GazetaDoPovoSpider(scrapy.Spider):
     def parse_pagination_page(self, response):
         """Get a list of news URL and set pagination logic to get more, see this page
         to understand better(https://www.gazetadopovo.com.br/ultimas-noticias/)
+
         :param response: the html response from scrapy download
         :return scrapy.Item: a iterable list of items extracted
         """
-        page_request_count = 0
         news_links = [a.attrib['href'] for a in get_value_by_selector(response,'.c-chamada a')]
 
         for url in news_links:
-            page_request_count += 1
+            self.page_request_count += 1
             url = urljoin('https://www.gazetadopovo.com.br', url)
             # for get comments section use "callback=self.parse_comments_section"
-            yield scrapy.Request(url, callback=self.parse_news_page, meta={'page_count': page_request_count})
+            yield scrapy.Request(url, callback=self.parse_news_page, meta={'page_count': self.page_request_count})
 
         # for limit the count of requests, i set 'CLOSESPIDER_PAGECOUNT= 200' on settings file.
         if news_links:
@@ -55,6 +57,7 @@ class GazetaDoPovoSpider(scrapy.Spider):
         """Parse the news page and extract text, title, subtitle, author,
         section(the section is part of url), date and url data using loader object,
         check more in documentation(https://docs.scrapy.org/en/latest/topics/loaders.html)
+
         :param response: the html response from scrapy download
         :return scrapy.Item: a iterable list of items extracted
         """
@@ -71,7 +74,7 @@ class GazetaDoPovoSpider(scrapy.Spider):
         loader.add_css('author', '.item-name span::text')
         loader.add_css('date', '.data-publicacao time::text')
         loader.add_value('section', url.split('/')[3])
-        loader.add_css('text', 'p::text')
+        loader.add_css('text', '.paywall-google > p::text')
         loader.add_value('url', url)
         write_in_frontier(loader)
 
@@ -81,6 +84,7 @@ class GazetaDoPovoSpider(scrapy.Spider):
         """Parse the news page and extract data about comments as author, date, text,
         using loader object, check more in documentation
         (https://docs.scrapy.org/en/latest/topics/loaders.html)
+
         :param response: the html response from scrapy download
         :return scrapy.Item: a iterable list of items extracted
         """
@@ -96,6 +100,7 @@ class GazetaDoPovoSpider(scrapy.Spider):
     def get_new_url_by_pagination(self, response):
         """Get a new url through pagination, the difference necessary is change a
         'offset' atributte in query URL incrementing the number of current page.
+
         :param response: the html response from scrapy download
         :return str: a new url result of pagination
         """
